@@ -48,18 +48,19 @@ def toggleProxy():
     
     f=open("stats.txt","w+")
     if int(stat)==1:
-        setProxy(0)
         f.write("0")
+        setProxy(0)
         setDns(prim_dns,sec_dns)
         return "Proxy Disabled"
 
     elif int(stat)==0 and sys.argv[1]!="valorant":
+        f.write("1")
         setProxy(1)
         setDns(0,0)
-        f.write("1")
         return "Proxy Enabled"
     else:
-        f.write(stat)
+        f.write("0")
+        setProxy(0)
         setDns(prim_dns,sec_dns)
         return "Proxy Already Disabled"
     
