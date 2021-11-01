@@ -1,4 +1,4 @@
 @echo off
 d:
 cd D:\Programing\Python\Projects\Proxy-Setup
-python toggle.py valorant Electro
+python toggle.py
