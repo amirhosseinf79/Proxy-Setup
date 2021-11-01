@@ -5,9 +5,8 @@ import json
 
 debug = 0
 
-network = "Ethernet"
 try: MODE = sys.argv[1]
-except: MODE = "Default"
+except: MODE = "Global"
 
 try: DNS = sys.argv[2]
 except: DNS = "Default"
@@ -15,6 +14,8 @@ except: DNS = "Default"
 f=open("Config.json")
 data = json.load(f)
 f.close()
+
+network = data["network"]
 
 provider = data["DNS"][-1]["provider"]
 prim_dns = data["DNS"][-1]["prim_dns"]
@@ -37,6 +38,7 @@ f.close()
 debugtitle = "(Debug Mode)" if debug else ""
 print(f"\n\nMode: {MODE} {debugtitle}")
 print("-"*33)
+print(f"Network: {network}")
 print(f"DNS Provider: {provider}")
 print(f"Primary DNS: {prim_dns}")
 print(f"Secondary DNS: {sec_dns}")
