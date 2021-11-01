@@ -1,0 +1,29 @@
+{
+	"DNS":[
+		{
+			"call":"ELCR",
+			"provider":"Electro",
+			"prim_dns" : "185.231.182.126",
+			"sec_dns" : "37.152.182.112"
+		},
+		{
+			"call":"BGZR",
+			"provider":"Begzar",
+			"prim_dns" : "185.55.226.26",
+			"sec_dns" : "185.55.225.25"
+		},
+		{
+			"call":"HIR",
+			"provider":"HostIran",
+			"prim_dns" : "172.29.0.100",
+			"sec_dns" : "172.29.2.100"
+		},
+		{
+			"call":"SCN",
+			"provider":"Shecan",
+			"prim_dns" : "178.22.122.100",
+			"sec_dns" : "185.51.200.2"
+		}
+	],
+	"VAL_PATH": "E:\\Riot Games\\Riot Client\\RiotClientServices.exe"
+}

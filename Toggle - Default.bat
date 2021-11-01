@@ -1,4 +1,5 @@
 @echo off
 d:
 cd D:\Programing\Python\Projects\Proxy-Setup
-python toggle.py
+prompt PROXY Control$G$S
+python toggle.py Default
