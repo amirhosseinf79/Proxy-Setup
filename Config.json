@@ -1,5 +1,6 @@
 {
 	"network":"Ethernet",
+	"VAL_PATH": "E:\\Riot Games\\Riot Client\\RiotClientServices.exe",
 	"DNS":[
 		{
 			"call":"ELCR",
@@ -24,7 +25,12 @@
 			"provider":"Shecan",
 			"prim_dns" : "178.22.122.100",
 			"sec_dns" : "185.51.200.2"
+		},
+		{
+			"call":"anony",
+			"provider":"Anonymous DNS",
+			"prim_dns" : "0.0.0.0",
+			"sec_dns" : "0.0.0.0"
 		}
-	],
-	"VAL_PATH": "E:\\Riot Games\\Riot Client\\RiotClientServices.exe"
+	]
 }

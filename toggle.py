@@ -47,10 +47,12 @@ print("-"*33, end="\n")
 def setDns(prim=0,sec=0):
     if MODE != "onlyProxy":
         if prim == 0 or sec == 0:
-            print("Connecting DNS to Google")
+            print("Connecting DNS to Google & Cloudflare...")
             if debug == 0:
+                os.system('ipconfig /flushdns')
+                # os.system(f'netsh interface IPv4 set dnsserver "{network}" static 0.0.0.0 both')
                 os.system(f'netsh interface ip set dns name="{network}" static 8.8.8.8')
-                os.system(f'netsh interface ip add dns name="{network}" 8.8.4.4 index=2')
+                os.system(f'netsh interface ip add dns name="{network}" 1.1.1.1 index=2')
         else:
             print(f"Connecting DNS to {prim} & {sec}...")
             if debug == 0:
